@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Testimonials.css";
 import { assets } from "../../assets";
 const Testimonials = () => {
+  const [tx, setTx] = useState(0); // keeps track of X translation
+  const slider = useRef(null);
+  const slideForward = () => {
+    if (tx > -50) {
+      const newTx = tx - 25;
+      setTx(newTx);
+      slider.current.style.transform = `translateX(${newTx}%)`;
+    }
+  };
+
+  const slideBackward = () => {
+    if (tx < 0) {
+      const newTx = tx + 25;
+      setTx(newTx);
+      slider.current.style.transform = `translateX(${newTx}%)`;
+    }
+  };
   return (
     <div className="testimonials">
-      <img src={assets.nextIcon} alt="next" className="next-btn" />
-      <img src={assets.backIcon} alt="Back" className="back-btn" />
+      <img
+        src={assets.nextIcon}
+        alt="next"
+        className="next-btn"
+        onClick={slideForward}
+      />
+      <img
+        src={assets.backIcon}
+        alt="Back"
+        className="back-btn"
+        onClick={slideBackward}
+      />
       <div className="slider">
-        <ul>
+        <ul ref={slider}>
           <li>
             <div className="slide">
               <div className="user-info">
