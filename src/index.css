@@ -35,6 +35,17 @@ a {
   background: #212ea0;
   color: #fff;
 }
+.btn:hover {
+  background-color: #666267;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.dark-btn:hover {
+  background-color: #1a238f;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
 /* media query */
 
 @media (max-width: 1000px) {

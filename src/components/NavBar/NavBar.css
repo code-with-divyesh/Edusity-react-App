@@ -28,6 +28,9 @@ nav ul li {
 .menuIcon {
   display: none;
 }
+nav ul li a:hover {
+  color: #ffd700; /* You can change this to any color you like */
+}
 
 /* media query */
 
