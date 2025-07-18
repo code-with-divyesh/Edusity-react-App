@@ -20,7 +20,7 @@ const Testimonials = () => {
     }
   };
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <img
         src={assets.nextIcon}
         alt="next"

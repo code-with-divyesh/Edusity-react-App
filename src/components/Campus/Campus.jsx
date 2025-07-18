@@ -4,7 +4,7 @@ import "./Campus.css";
 
 const Campus = () => {
   return (
-    <div className="Campus">
+    <div className="Campus" id="campus">
       <div className="gallery">
         <img src={assets.gallery1} alt="gallery1" />
         <img src={assets.gallery2} alt="gallery2" />
