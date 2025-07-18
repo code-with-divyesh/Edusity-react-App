@@ -25,9 +25,10 @@ import user2 from "./user-2.png";
 import user3 from "./user-3.png";
 import user4 from "./user-4.png";
 import whiteArrow from "./white-arrow.png";
+import clgVideo from "./clg-vid.mp4";
 
 // Export all
-export const assets={
+export const assets = {
   about,
   backIcon,
   darkArrow,
@@ -55,4 +56,5 @@ export const assets={
   user3,
   user4,
   whiteArrow,
+  clgVideo,
 };
