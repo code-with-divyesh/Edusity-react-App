@@ -5,7 +5,6 @@ const Footer = () => {
     <div className="footer">
       <p>© 2025 Edusity. All rights reserved.</p>
       <ul>
-        <li>Terms of Services</li>
         <li>Privacy Policy</li>
         <li>
           <a href="https://github.com/code-with-divyesh/">Github</a>
